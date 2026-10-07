@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CREEP — ropa urbana y drops limitados.">
+  <title>CREEP — Streetwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ticker">3 CUOTAS SIN INTERÉS · ENVÍO GRATIS DESDE $170.000 · 10% OFF CON TRANSFERENCIA · NUEVO DROP</div>
+
+  <header class="header">
+    <button class="icon-btn mobile-menu" aria-label="Abrir menú">☰</button>
+    <a class="logo" href="#">CREEP<span>®</span></a>
+    <nav class="nav">
+      <a href="#productos">Productos</a>
+      <a href="#drop">Drop</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Buscar">⌕</button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Carrito">Bag <b id="cartCount">0</b></button>
+    </div>
+  </header>
+
+  <div class="search-panel" id="searchPanel">
+    <input id="searchInput" type="search" placeholder="¿Qué estás buscando?" autocomplete="off">
+  </div>
+
+  <main>
+    <section class="hero" id="drop">
+      <div class="hero-copy">
+        <p class="eyebrow">CREEP / DROP 01</p>
+        <h1>NO<br><em>RULES.</em></h1>
+        <p>Prendas creadas para moverte distinto. Diseños urbanos, cantidades limitadas.</p>
+        <a class="button" href="#productos">VER DROP →</a>
+      </div>
+      <div class="hero-art" aria-label="Imagen editorial CREEP">
+        <div class="shape shape-a"></div>
+        <div class="shape shape-b"></div>
+        <div class="hero-tag">CREEP<br>01/26</div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div><strong>3 CUOTAS</strong><span>sin interés</span></div>
+      <div><strong>ENVÍO GRATIS</strong><span>desde $170.000</span></div>
+      <div><strong>10% OFF</strong><span>con transferencia</span></div>
+    </section>
+
+    <section class="section" id="productos">
+      <div class="section-head">
+        <div><p class="eyebrow">SHOP</p><h2>BESTSELLERS</h2></div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">Todo</button>
+          <button class="filter" data-filter="remeras">Remeras</button>
+          <button class="filter" data-filter="buzos">Buzos</button>
+          <button class="filter" data-filter="pantalones">Pantalones</button>
+        </div>
+      </div>
+
+      <div class="grid" id="productGrid">
+        <article class="product" data-category="remeras" data-name="Creep Core Tee" data-price="35000">
+          <div class="product-image img-1"><span>NEW</span></div>
+          <div class="product-info"><h3>CREEP CORE TEE</h3><p>Remera oversized · Negro</p><strong>$35.000</strong><button class="add">AGREGAR +</button></div>
+        </article>
+        <article class="product" data-category="buzos" data-name="Creep Signal Hoodie" data-price="79000">
+          <div class="product-image img-2"><span>DROP 01</span></div>
+          <div class="product-info"><h3>SIGNAL HOODIE</h3><p>Hoodie pesado · Gris</p><strong>$79.000</strong><button class="add">AGREGAR +</button></div>
+        </article>
+        <article class="product" data-category="pantalones" data-name="Creep Utility Pant" data-price="65000">
+          <div class="product-image img-3"><span>LIMITED</span></div>
+          <div class="product-info"><h3>UTILITY PANT</h3><p>Carpenter fit · Camo</p><strong>$65.000</strong><button class="add">AGREGAR +</button></div>
+        </article>
+        <article class="product" data-category="remeras" data-name="Creep Cross Tee" data-price="38000">
+          <div class="product-image img-4"><span>BEST</span></div>
+          <div class="product-info"><h3>CROSS TEE</h3><p>Slim fit · Crema</p><strong>$38.000</strong><button class="add">AGREGAR +</button></div>
+        </article>
+        <article class="product" data-category="buzos" data-name="Creep Metal Zip" data-price="76000">
+          <div class="product-image img-5"><span>SALE</span></div>
+          <div class="product-info"><h3>METAL ZIP</h3><p>Zip hoodie · Negro</p><strong>$76.000</strong><button class="add">AGREGAR +</button></div>
+        </article>
+        <article class="product" data-category="pantalones" data-name="Creep Stripe Pant" data-price="60000">
+          <div class="product-image img-6"><span>NEW</span></div>
+          <div class="product-info"><h3>STRIPE PANT</h3><p>Wide fit · Gris oscuro</p><strong>$60.000</strong><button class="add">AGREGAR +</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto" id="nosotros">
+      <p class="eyebrow">CREEP MANIFESTO</p>
+      <h2>HECHO PARA<br><em>NO ENCAJAR.</em></h2>
+      <p>Diseñamos cada drop para este momento. Pocas unidades, identidad fuerte y prendas para usar a tu manera.</p>
+    </section>
+
+    <section class="sale section">
+      <div class="section-head"><div><p class="eyebrow">LAST CHANCE</p><h2>OFERTAS</h2></div></div>
+      <div class="sale-box">
+        <div><b>UP TO 30% OFF</b><span>Últimas unidades del drop anterior.</span></div>
+        <a class="button dark" href="#productos">VER OFERTAS →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="footer-brand"><div class="logo">CREEP<span>®</span></div><p>STREETWEAR / BUENOS AIRES</p></div>
+    <div><h4>INFO</h4><a href="#">Envíos</a><a href="#">Cambios</a><a href="#">Preguntas frecuentes</a></div>
+    <div><h4>SEGUINOS</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Contacto</a></div>
+    <div class="newsletter"><h4>NEWSLETTER</h4><p>Recibí nuevos drops y lanzamientos.</p><form id="newsletter"><input type="email" placeholder="Tu email" required><button>→</button></form></div>
+    <div class="copyright">© 2026 CREEP. TODOS LOS DERECHOS RESERVADOS.</div>
+  </footer>
+
+  <aside class="cart" id="cart">
+    <div class="cart-head"><h2>Tu carrito</h2><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">El carrito está vacío.</p></div>
+    <div class="cart-foot"><div><span>Subtotal</span><strong id="subtotal">$0</strong></div><button class="button" id="checkout">FINALIZAR COMPRA</button><small>Demo: conectá Mercado Pago/Tienda Nube para cobrar.</small></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
